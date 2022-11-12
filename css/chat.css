@@ -1,0 +1,137 @@
+body{
+	margin : 0!important;
+	padding:0!important;
+	height:100vh;
+}
+ul{
+	list-style: none;
+	padding:10px;
+	margin:0;
+}
+.wrap {
+	padding:0;
+	box-shadow: 0 0 1px rgba(111,214,127),0 0 10px rgb(148, 205, 156);
+}
+.wrap h2{
+	color:white;
+	height: 60px;
+	background: url(../img/10.png) top center/100% 100% no-repeat;
+	line-height:60px;
+	font-size:1.2rem;
+	font-weight: bold;
+}
+.wrap .message{
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: calc(100% - 80px - 30px);
+	background:white;
+	background:url(../img/2.webp) top center/cover no-repeat;
+	scroll-behavior: smooth;
+}
+.wrap ul li{
+	display: flex;
+	margin-bottom : 20px;
+}
+.wrap .send {
+	line-height:50px;
+	height : 50px;
+}
+
+.wrap .send input {
+	box-sizing: border-box;
+	width : calc(100% - 50px);
+	height: 50px;
+	vertical-align: middle;
+	border:none;
+	outline: none;
+	color:rgba(0,0,0,0.7);
+	padding : 0;
+	padding-left :10px;
+}
+.wrap .send button{
+	width : 50px;
+	height: 50px;
+	line-height:100%;
+	border:none;
+	background:transparent;
+	color:white;
+	padding : 0 10px;
+	font-size: 1.6rem;
+	background:url(../img/1.webp) top center/cover no-repeat;
+	
+}
+.wrap ul li img:first-of-type{
+	display: block;
+	border-radius: 50%;
+	width : 50px;
+	height : 50px;
+	object-fit: cover;
+}
+.wrap ul li p{
+	display: block;
+	position : relative;
+	line-height: 25px;
+	letter-spacing:1px;
+	margin:0;
+	padding :10px;
+	max-width: 50%;
+	box-sizing: border-box;
+	background-color: #29a7cb;
+	border-radius: 30px;
+	color:white;
+	font-size : 0.8rem;
+}
+.wrap ul li.robot p {
+	background:white;
+	color:black;
+}
+.wrap ul li.robot p{
+	margin-left : 25px;
+}
+.wrap ul li.robot{
+	justify-content: flex-start;
+}
+.wrap ul li.myself{
+	justify-content: flex-end;
+}
+
+.wrap ul li.myself p{
+	line-height : 2;
+	margin-right : 25px;
+}
+
+.wrap ul li.robot p::before{
+	content : "";
+	position : absolute;
+	top :10px;
+	left : -28px;
+	width : 0;
+	height : 0;
+	border-top-right-radius: 4px;
+	transform: rotate(20deg);
+	border : 10px solid transparent;
+	border-right : 28px solid white;
+}
+.wrap ul li.myself p::before{
+	content : "";
+	position : absolute;
+	top :10px;
+	right :-28px;
+	width : 0;
+	height : 0;
+	border-top-left-radius: 4px;
+	transform: rotate(-20deg);
+	border : 10px solid transparent;
+	border-left : 28px solid #29a7cb;
+}
+
+
+
+@media all and (min-width:576px){
+	.wrap{
+		width : 540px;
+	}
+	
+	
+}
+

@@ -1,0 +1,97 @@
+body {
+	margin : 0;
+}
+.wrap {
+	background: url(../img/13.webp) top center/cover no-repeat;
+	
+}
+.wrap .formBox{
+	background:rgb(0,0,0,.3);
+	box-shadow: 0 0 10px #fff;
+	border-radius: 5px;
+	width : 70%;
+	padding-bottom: 30px;
+}
+.wrap img{
+	width :120px;
+	height : 120px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.gt {
+	margin-top:5px;
+	margin-bottom:20px;
+	color:#fff;
+	font-weight: bold;
+}
+.wrap h2 {
+	color :white;
+	text-shadow: 0 0 4px black;
+    font-weight: bold;
+}
+.wrap form label{
+	width : 70%;
+	margin-bottom : 30px;
+	box-sizing:content-box;
+	padding-bottom:5px;
+	height:40px;
+	border-bottom:1px solid rgba(255,255,255,.8);
+}
+.wrap form label p{
+	bottom : calc(-80%);
+	color:red;
+	font-size: 0.8rem;
+	
+}
+.wrap form label input{
+	width:calc(100% - 50px);
+	border:none;
+	outline:none;
+	height:100%;
+	background-color:transparent;
+	color:white;
+}
+.wrap form label input::placeholder{
+	color:rgb(255,255,255,.5);
+}
+.wrap form {
+	width :100%;
+}
+.wrap form label span{
+	display: inline-block;
+	width : 50px;
+	height:100%;
+	vertical-align:top;
+	line-height:40px;
+	background-color: transparent;
+	font-size: 1.6rem;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color:white;
+}
+.wrap form .loginUp{
+	width : 70%;
+	background-color:rgb(0,0,0,.45);
+	border:none;
+	outline: none;
+	height : 35px;
+}
+.wrap form .loginUp span{
+	color : red;
+	left : 50%;
+	transform: translateX(-50%);
+	bottom: -25px;
+    width: 100%;
+}
+
+@media all and (min-width:576px){
+	.wrap{
+		width : 540px;
+	}
+	.wrap form label,
+	.wrap form .loginUp{
+		width : 50%;	
+	}
+	
+}
+
